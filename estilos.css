@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#superior {
+    min-height: 100vh;
+    background-image: url("https://images.pexels.com/photos/7639064/pexels-photo-7639064.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: clamp(15px, 4vw, 30px);
+}
+
+nav h1 {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 500;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: clamp(10px, 3vw, 20px);
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+#bienvenida {
+    min-height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#bienvenida h2 {
+    font-size: clamp(28px, 6vw, 56px);
+    font-weight: 700;
+    max-width: 900px;
+    text-shadow: #111 2px 2px 4px;
+    color: rgb(250, 220, 174)
+}
+
+#bienvenida form {
+    display: flex;
+    gap: 15px;
+}
+
+#bienvenida input {
+    padding: 14px 18px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: none;
+    width: 260px;
+    outline: none;
+    
+}
+
+#bienvenida button {
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #ff9800;
+    color: white;
+}
+
+#principales {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#principales h2 {
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+#principales div {
+    display: inline-block;
+    margin: 20px;
+}
+
+#principales img {
+    border-radius: 12px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #bienvenida form {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #bienvenida input,
+    #bienvenida button {
+        width: 100%;
+    }
+
+}
