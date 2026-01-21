@@ -24,7 +24,9 @@ nav {
 
 nav h1 {
     font-size: clamp(1.5rem, 3vw, 2.2rem);
-    font-weight: 500;
+    font-weight: 400;
+    text-shadow: #111 2px 2px 4px;
+    color: rgb(250, 220, 174)
 }
 
 ul {
@@ -39,6 +41,7 @@ ul li a {
     text-decoration: none;
     color: black;
     font-weight: 500;
+    text-shadow: #111 2px 2px 4px;
 }
 
 #bienvenida {
@@ -103,6 +106,11 @@ ul li a {
 
 #principales img {
     border-radius: 12px;
+}
+
+#principales img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
 footer {
